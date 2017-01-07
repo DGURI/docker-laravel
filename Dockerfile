@@ -86,5 +86,5 @@ RUN apt-get remove --purge -y software-properties-common && \
 EXPOSE 80 443
 
 # set container entrypoints
-COPY start.sh /
-ENTRYPOINT ["/start.sh"]
+COPY scripts/entrypoint.sh /
+ENTRYPOINT ["/entrypoint.sh"]
